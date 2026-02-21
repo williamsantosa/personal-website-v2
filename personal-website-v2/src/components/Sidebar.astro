@@ -1,0 +1,81 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	activeId?: string;
+}
+
+const { activeId = "home" } = Astro.props;
+
+const navItems = [
+	{ id: "home", href: "/", label: "Home", icon: "heroicons-solid:home" },
+	{ id: "about", href: "/about", label: "About", icon: "heroicons-solid:user" },
+	{ id: "work", href: "/work", label: "Work", icon: "heroicons-solid:computer-desktop" },
+	{ id: "theme", label: "Toggle theme (autumn / sunset)", isTheme: true },
+];
+---
+
+<aside class="sidebar" aria-label="Main navigation">
+	<nav class="sidebar-nav" role="navigation">
+		{navItems.map((item) => {
+			const isActive = activeId === item.id;
+			if (item.isTheme) {
+				return (
+					<button
+						type="button"
+						class="sidebar-link theme-toggle"
+						title={item.label}
+						aria-label={item.label}
+					>
+						<span class="theme-icon theme-icon-moon" aria-hidden="true">
+							<Icon name="heroicons-solid:moon" class="sidebar-icon" />
+						</span>
+						<span class="theme-icon theme-icon-sun" aria-hidden="true">
+							<Icon name="heroicons-solid:sun" class="sidebar-icon" />
+						</span>
+					</button>
+				);
+			}
+			return (
+				<a
+					href={item.href}
+					class={`sidebar-link ${isActive ? "sidebar-link-active" : ""}`}
+					aria-current={isActive ? "page" : undefined}
+					title={item.label}
+				>
+					<Icon name={item.icon} class="sidebar-icon" aria-hidden />
+				</a>
+			);
+		})}
+	</nav>
+</aside>
+
+<script>
+	const STORAGE_KEY = "theme";
+	const THEMES = ["autumn", "sunset"] as const;
+
+	function getTheme(): (typeof THEMES)[number] {
+		if (typeof document === "undefined") return "autumn";
+		const stored = localStorage.getItem(STORAGE_KEY);
+		if (stored === "autumn" || stored === "sunset") return stored;
+		return document.documentElement.getAttribute("data-theme") === "sunset" ? "sunset" : "autumn";
+	}
+
+	function setTheme(theme: (typeof THEMES)[number]) {
+		document.documentElement.setAttribute("data-theme", theme);
+		localStorage.setItem(STORAGE_KEY, theme);
+	}
+
+	function toggleTheme() {
+		setTheme(getTheme() === "autumn" ? "sunset" : "autumn");
+	}
+
+	// Apply saved theme on load
+	document.addEventListener("DOMContentLoaded", () => {
+		const theme = getTheme();
+		document.documentElement.setAttribute("data-theme", theme);
+		document.querySelectorAll<HTMLButtonElement>(".theme-toggle").forEach((btn) => {
+			btn.addEventListener("click", toggleTheme);
+		});
+	});
+</script>
