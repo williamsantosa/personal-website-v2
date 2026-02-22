@@ -9,7 +9,11 @@
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
-	"pages_build_output_dir": "./dist",
+	"main": "dist/_worker.js/index.js",
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	},
 	"observability": {
 		"enabled": true
 	},
@@ -19,7 +23,14 @@
 			"database_name": "visitor-pins",
 			"database_id": "015bc294-e40e-4353-bfc9-7a9ae3297972"
 		}
-	]
+	],
+	"routes": [
+    {
+      "pattern": "williamsantosa.com", // Replace with your domain
+      "custom_domain": true
+    }
+  ]
+	
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
