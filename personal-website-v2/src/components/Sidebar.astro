@@ -25,7 +25,6 @@ const navItems = [
 					<button
 						type="button"
 						class="sidebar-link theme-toggle"
-						title={item.label}
 						aria-label={item.label}
 					>
 						<span class="theme-icon theme-icon-moon" aria-hidden="true">
@@ -34,6 +33,7 @@ const navItems = [
 						<span class="theme-icon theme-icon-sun" aria-hidden="true">
 							<Icon name="heroicons-solid:sun" class="sidebar-icon" />
 						</span>
+						<span class="sidebar-label">Theme</span>
 					</button>
 				);
 			}
@@ -42,9 +42,9 @@ const navItems = [
 					href={item.href}
 					class={`sidebar-link ${isActive ? "sidebar-link-active" : ""}`}
 					aria-current={isActive ? "page" : undefined}
-					title={item.label}
 				>
 					<Icon name={item.icon} class="sidebar-icon" aria-hidden />
+					<span class="sidebar-label">{item.label}</span>
 				</a>
 			);
 		})}

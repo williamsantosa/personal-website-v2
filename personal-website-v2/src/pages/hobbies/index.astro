@@ -1,8 +1,46 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const sections = [
+	{
+		id: "making",
+		title: "Making",
+		items: ["Woodworking", "Electronics", "3D printing"],
+	},
+	{
+		id: "reading",
+		title: "Reading",
+		items: ["Sci-fi", "Nonfiction", "Comics"],
+	},
+	{
+		id: "other",
+		title: "Other",
+		items: ["Running", "Cooking", "Photography"],
+	},
+];
 ---
 
 <Layout title="Hobbies" activeId="hobbies">
-	<h1>Hobbies</h1>
-	<p>Things I do for fun. Add your own—reading, music, making, sports, etc.</p>
+	<div class="page-content">
+		<header class="gear-hero">
+			<h1 class="gear-title">Hobbies</h1>
+			<p class="gear-subheader">Things I do for fun when I'm not at the keyboard.</p>
+			<p class="gear-description">
+				A mix of making, reading, and everything in between. Update the list below to match your own.
+			</p>
+		</header>
+
+		<div class="gear-card page-card">
+			{sections.map((section) => (
+				<section class="page-card-section" aria-labelledby={`hobby-${section.id}`}>
+					<h2 id={`hobby-${section.id}`} class="gear-section-title">{section.title}</h2>
+					<ul class="page-card-list">
+						{section.items.map((item) => (
+							<li>{item}</li>
+						))}
+					</ul>
+				</section>
+			))}
+		</div>
+	</div>
 </Layout>
