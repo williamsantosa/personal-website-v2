@@ -1,15 +1,103 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home" activeId="home">
-	<div class="page-content">
-		<header class="gear-hero">
-			<h1 class="gear-title">Hi, I'm [Your Name]</h1>
-			<p class="gear-subheader">Designer, developer, or whatever you do—one short line.</p>
-			<p class="gear-description">
-				Welcome. This is my little corner of the web. I build things, write sometimes, and keep a list of <a href="/gear">gear</a> and <a href="/hobbies">hobbies</a> here. Say hi at <a href="mailto:you@example.com">you@example.com</a>.
-			</p>
-		</header>
-	</div>
+  <div class="page-content">
+    <header class="gear-hero">
+      <h1 class="gear-title">William Santosa is a weirdo</h1>
+      <p class="gear-subheader">Okay, maybe don't take that too seriously :P</p>
+      <p class="gear-description">
+        Anyways, welcome to my corner of the web! Feel free to look around. If
+        you're interested about my life story and professional work, you can
+        find more information <a href="/about">here</a>.
+      </p>
+      <figure class="gear-hero-image">
+        <img src="/FumoLamp.png" alt="Three Fumos around a lamp" />
+        <figcaption>
+          One of my favorite <a
+            href="https://en.touhouwiki.net/wiki/FumoFumo"
+            target="_blank"
+            rel="noopener noreferrer">Fumo</a
+          > pictures, three Fumos around a lava lamp
+        </figcaption>
+      </figure>
+    </header>
+
+    <section class="visitor-map-section">
+      <h2 class="gear-section-title">
+        On a side note.. where are you from? :)
+      </h2>
+      <p class="page-card-text">
+        I've always been interested in the demographic of people who visit (my)
+        websites. If you'd like, click a spot on the map to drop a pin. You can
+        drag around the map and scroll to zoom in and out.
+      </p>
+      <div id="visitor-map" class="visitor-map"></div>
+    </section>
+  </div>
 </Layout>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<script
+  id="leaflet-js"
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+<script is:inline>
+  function initVisitorMap() {
+    const mapEl = document.getElementById("visitor-map");
+    if (!mapEl || typeof window.L === "undefined") return false;
+    const L = window.L;
+    const map = L.map("visitor-map").setView([20, 0], 2);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+
+    function addPin(lat, lng) {
+      L.marker([lat, lng]).addTo(map);
+    }
+
+    fetch("/api/pins")
+      .then((r) => r.json())
+      .then((data) => {
+        (data.pins || []).forEach((p) => addPin(p.lat, p.lng));
+      })
+      .catch(() => {});
+
+    map.on("click", (e) => {
+      const { lat, lng } = e.latlng;
+      fetch("/api/pins", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ lat, lng }),
+      })
+        .then((r) => r.json().then((data) => ({ status: r.status, data })))
+        .then(({ status, data }) => {
+          if (data.ok) addPin(lat, lng);
+          else if (data.error) alert(data.error);
+        })
+        .catch(() => {});
+    });
+    return true;
+  }
+
+  function runWhenReady() {
+    if (initVisitorMap()) return;
+    var leafletScript = document.getElementById("leaflet-js");
+    if (leafletScript) leafletScript.addEventListener("load", initVisitorMap);
+    else setTimeout(runWhenReady, 50);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runWhenReady);
+  } else {
+    runWhenReady();
+  }
+</script>

@@ -315,6 +315,26 @@
   opacity: 0.85;
 }
 
+.visitor-map-section {
+  margin-top: 2rem;
+}
+
+.visitor-map-section .gear-section-title {
+  margin-bottom: 0.5rem;
+}
+
+.visitor-map-section .page-card-text {
+  margin-bottom: 1rem;
+}
+
+.visitor-map {
+  width: 100%;
+  height: 360px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--color-base-200);
+}
+
 /* Main gear card container (also used for About / Hobbies content card) */
 .gear-card {
   background-color: var(--color-base-200);
