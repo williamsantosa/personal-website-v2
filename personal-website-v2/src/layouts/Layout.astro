@@ -23,7 +23,9 @@ const { title = "Astro", activeId = "home" } = Astro.props;
 		<div class="layout-with-sidebar">
 			<Sidebar activeId={activeId} />
 			<main class="main-content">
-				<slot />
+				<div class="main-content-bound">
+					<slot />
+				</div>
 			</main>
 		</div>
 	</body>

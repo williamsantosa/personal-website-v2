@@ -73,12 +73,11 @@
 }
 
 
-/* Vertical icon sidebar: no background, 1/8 from left, vertically centered */
+/* Vertical icon sidebar – top aligned with main content (--content-start) */
 .sidebar {
   position: fixed;
-  left: 2.5%; /* % of the screen from the left */
-  top: 23%; /* % of the screen from the top */
-  transform: translateY(-50%);
+  left: 3.2%; /* % of the screen from the left */
+  top: var(--content-start); /* same line as main content */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,4 +154,248 @@
 
 .layout-with-sidebar .main-content {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Shared vertical start line for sidebar and main content */
+:root {
+  --content-start: 11vh;
+}
+
+/* Centered bounding box for page content – slightly right of dead center */
+.main-content-bound {
+  width: 70%;
+  max-width: 42rem;
+  margin: 0 auto;
+  transform: translateX(2rem); /* nudge right of center – adjust to taste */
+  padding-top: var(--content-start); /* same line as sidebar */
+  padding-bottom: 2rem;
+}
+
+/* Gear page: allow wider content */
+.main-content-bound:has(.gear-page) {
+  max-width: 52rem;
+}
+
+/* ----- Gear page ----- */
+.gear-page {
+  width: 100%;
+}
+
+.gear-hero {
+  margin-bottom: 2rem;
+}
+
+.gear-title {
+  margin-bottom: 0.5rem;
+}
+
+.gear-subheader {
+  font-size: 1.125rem;
+  color: var(--color-base-content);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.gear-description {
+  color: var(--color-base-content);
+  line-height: 1.6;
+}
+
+.gear-description a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.gear-description a:hover {
+  opacity: 0.85;
+}
+
+.gear-hero-image {
+  margin: 2rem 0;
+}
+
+.gear-hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.gear-hero-image figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-base-content);
+  opacity: 0.85;
+}
+
+.gear-hero-image figcaption a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Main gear card container */
+.gear-card {
+  background-color: var(--color-base-200);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.gear-section {
+  margin-bottom: 2.5rem;
+}
+
+.gear-section:last-child {
+  margin-bottom: 0;
+}
+
+.gear-section-header {
+  margin-bottom: 1rem;
+}
+
+.gear-section-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.gear-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-base-content);
+  margin: 0;
+}
+
+.gear-rss-pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-base-content);
+  background-color: var(--color-base-300);
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+.gear-rss-pill:hover {
+  opacity: 0.9;
+}
+
+.gear-carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto;
+}
+
+.gear-section-link,
+.gear-section-scroll {
+  color: var(--color-base-content);
+  opacity: 0.7;
+}
+
+.gear-section-link:hover,
+.gear-section-scroll:hover:not(:disabled) {
+  opacity: 1;
+}
+
+.gear-section-scroll {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gear-section-scroll:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.gear-chevron {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.gear-section-updated {
+  font-size: 0.8125rem;
+  color: var(--color-base-content);
+  opacity: 0.65;
+  margin: 0.25rem 0 0 0;
+}
+
+/* Viewport: 4 cards on large screens, 1 card when narrow; scrollbar hidden */
+.gear-row-viewport {
+  width: 47.75rem; /* 4 * 11rem + 3 * 1.25rem */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 36rem) {
+  .gear-row-viewport {
+    width: 11rem; /* exactly 1 card – no peek of the next */
+  }
+}
+
+.gear-row {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.gear-row::-webkit-scrollbar {
+  display: none;
+}
+
+.gear-item {
+  flex: 0 0 auto;
+  width: 11rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gear-item-image-wrap {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: var(--color-base-300);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 0.75rem;
+}
+
+.gear-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gear-item-label {
+  font-size: 0.875rem;
+  color: var(--color-base-content);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.gear-item-category {
+  display: block;
+  opacity: 0.75;
+}
+
+.gear-item-name {
+  display: block;
+  font-weight: 500;
 }

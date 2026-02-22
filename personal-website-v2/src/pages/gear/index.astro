@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Icon } from "astro-icon/components";
+
+const sections = [
+	{
+		id: "recently-added",
+		title: "Recently added",
+		updated: "1w ago",
+		showRss: true,
+		items: [
+			{ category: "Workspace", name: "Mac Mini", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "Workspace", name: "OWC Express 4M2 SSD Enclosure", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "Vintage", name: "Apple iSight", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+		],
+	},
+	{
+		id: "workspace",
+		title: "Workspace",
+		items: [
+			{ category: "Workspace", name: "Uplift Standing Desk", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "Workspace", name: "Apple Pro Display XDR", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "Workspace", name: "Mac Mini", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "Workspace", name: "Uplift Standing Desk", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "Workspace", name: "Apple Pro Display XDR", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "Workspace", name: "Mac Mini", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+		],
+	},
+	{
+		id: "edc",
+		title: "EDC",
+		items: [
+			{ category: "EDC", name: "Casio Watch", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+			{ category: "EDC", name: "Keychain Tool", image: "https://placehold.co/200x200/f5f5f5/999?text=+" },
+		],
+	},
+];
+---
+
+<Layout title="Gear" activeId="gear">
+	<div class="gear-page">
+		<header class="gear-hero">
+			<h1 class="gear-title">Gear</h1>
+			<p class="gear-subheader">Things I like and use for computing, travel, hobbies, and more.</p>
+			<p class="gear-description">
+				Among us Among us Among us<strong><a href="#">Among us</a></strong>. Among usAmong usAmong usAmong usAmong usAmong usAmong usAmong usAmong usAmong usAmong usAmong usAmong usAmong usAmong us.
+			</p>
+		</header>
+
+		<!-- Optional: hero image with caption -->
+		<figure class="gear-hero-image">
+			<img src="https://placehold.co/800x450/f5f5f5/999?text=Desk+setup" alt="Desk setup" width="800" height="450" />
+			<figcaption>Scuffed setup with<a href="#">minimal desk space</a>.</figcaption>
+		</figure>
+
+		<div class="gear-card">
+			{sections.map((section) => (
+				<section class="gear-section" aria-labelledby={`section-${section.id}`}>
+					<header class="gear-section-header">
+						<div class="gear-section-title-row">
+							<h2 id={`section-${section.id}`} class="gear-section-title">{section.title}</h2>
+							{section.showRss && (
+								<a href="/rss.xml" class="gear-rss-pill" aria-label="RSS feed">RSS</a>
+							)}
+							<div class="gear-carousel-controls">
+								<button type="button" class="gear-section-scroll gear-scroll-prev" aria-label="Previous 4 cards">
+									<Icon name="heroicons-solid:chevron-left" class="gear-chevron" />
+								</button>
+								<button type="button" class="gear-section-scroll gear-scroll-next" aria-label="Next 4 cards">
+									<Icon name="heroicons-solid:chevron-right" class="gear-chevron" />
+								</button>
+							</div>
+						</div>
+						{section.updated && (
+							<p class="gear-section-updated">Updated {section.updated} ago</p>
+						)}
+					</header>
+					<div class="gear-row-viewport">
+						<div class="gear-row">
+						{section.items.map((item) => (
+							<a href="#" class="gear-item">
+								<div class="gear-item-image-wrap">
+									<img src={item.image} alt="" width="200" height="200" class="gear-item-image" />
+								</div>
+								<p class="gear-item-label">
+									{section.id === "recently-added" && (
+										<span class="gear-item-category">{item.category}</span>
+									)}
+									<span class="gear-item-name">{item.name}</span>
+								</p>
+							</a>
+						))}
+						</div>
+					</div>
+				</section>
+			))}
+		</div>
+	</div>
+</Layout>
+
+<script>
+	function getScrollAmount(row: HTMLElement): number {
+		const viewport = row.parentElement;
+		return viewport ? viewport.clientWidth : 0;
+	}
+
+	function updateButtons(section: HTMLElement) {
+		const row = section.querySelector(".gear-row");
+		const prevBtn = section.querySelector(".gear-scroll-prev");
+		const nextBtn = section.querySelector(".gear-scroll-next");
+		if (!row || !prevBtn || !nextBtn) return;
+		const maxScroll = row.scrollWidth - row.clientWidth;
+		(prevBtn as HTMLButtonElement).disabled = row.scrollLeft <= 0;
+		(nextBtn as HTMLButtonElement).disabled = row.scrollLeft >= maxScroll - 1;
+	}
+
+	document.querySelectorAll(".gear-section").forEach((section) => {
+		const row = section.querySelector(".gear-row") as HTMLElement;
+		if (!row) return;
+
+		section.querySelector(".gear-scroll-prev")?.addEventListener("click", () => {
+			const amount = getScrollAmount(row);
+			row.scrollBy({ left: -amount, behavior: "smooth" });
+			setTimeout(() => updateButtons(section as HTMLElement), 400);
+		});
+
+		section.querySelector(".gear-scroll-next")?.addEventListener("click", () => {
+			const amount = getScrollAmount(row);
+			row.scrollBy({ left: amount, behavior: "smooth" });
+			setTimeout(() => updateButtons(section as HTMLElement), 400);
+		});
+
+		row.addEventListener("scroll", () => updateButtons(section as HTMLElement));
+		updateButtons(section as HTMLElement);
+	});
+</script>
