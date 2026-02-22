@@ -1,5 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import ScrollReveal from "../../components/ScrollReveal.astro";
+
+const highlights = [
+  "UC Santa Cruz BS, Computer Science",
+  "UCLA MS, Computer Science",
+  "Roblox (Configurations Team)",
+  "Maxar Technologies internship",
+  "Santa Cruz Institute for Particle Physics (research)",
+];
 ---
 
 <Layout title="About" activeId="about">
@@ -106,6 +115,7 @@ import Layout from "../../layouts/Layout.astro";
         jobs to support myself through college.
       </p>
     </section>
+	<ScrollReveal items={highlights} />
 	<h2 class="gear-section-title">Social Links</h2>
     <ul class="page-card-text">
 		<li><a href="https://www.linkedin.com/in/williamsantosa/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>

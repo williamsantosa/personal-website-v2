@@ -337,6 +337,36 @@
   margin-bottom: 0.25rem;
 }
 
+/* Scroll-reveal list: fixed height, MORE button scrolls one line */
+.scroll-reveal {
+  margin: 0.75rem 0;
+}
+.scroll-reveal-viewport {
+  max-height: 6.5rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+}
+.scroll-reveal-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+  color: var(--color-base-content);
+  line-height: 1.6;
+}
+.scroll-reveal-list li {
+  margin-bottom: 0.15rem;
+}
+.scroll-reveal-more {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.scroll-reveal-chevron {
+  font-size: 0.7em;
+}
+
 .gear-section {
   margin-bottom: 2.5rem;
 }

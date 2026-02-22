@@ -1,0 +1,69 @@
+---
+interface Props {
+  items: string[];
+  visibleLines?: number;
+}
+
+const { items, visibleLines = 4 } = Astro.props;
+const secondCopy = items.length > 1 ? items.slice(0, -1) : items;
+---
+
+<div class="scroll-reveal">
+  <div class="scroll-reveal-viewport" tabindex="0" aria-label="Scroll to reveal more">
+    <ul class="scroll-reveal-list" data-copy-size={items.length}>
+      {[...items, ...secondCopy].map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </div>
+  <button type="button" class="scroll-reveal-more btn btn-sm btn-ghost gap-1 mt-2" aria-label="Scroll to reveal more">
+    SCROLL <span class="scroll-reveal-chevron opacity-80" aria-hidden="true">⌄</span>
+  </button>
+</div>
+
+<script>
+  function initScrollReveal(container: HTMLElement) {
+    const viewport = container.querySelector<HTMLElement>(".scroll-reveal-viewport");
+    const firstItem = container.querySelector<HTMLElement>(".scroll-reveal-list li");
+    const btn = container.querySelector<HTMLButtonElement>(".scroll-reveal-more");
+    if (!viewport || !firstItem || !btn) return;
+
+    const vp = viewport;
+    const listItems = container.querySelectorAll<HTMLElement>(".scroll-reveal-list li");
+    const ul = container.querySelector<HTMLElement>(".scroll-reveal-list");
+    const firstCopyLength = ul?.dataset.copySize ? parseInt(ul.dataset.copySize, 10) : Math.ceil(listItems.length / 2);
+    let lineHeight: number;
+    if (listItems.length >= 2) {
+      lineHeight = listItems[1].getBoundingClientRect().top - listItems[0].getBoundingClientRect().top;
+    } else {
+      const style = getComputedStyle(firstItem);
+      const marginBottom = style.marginBottom ? parseFloat(style.marginBottom) : 0;
+      lineHeight = firstItem.offsetHeight + (Number.isNaN(marginBottom) ? 6 : marginBottom);
+    }
+    const firstOfSecondCopy = listItems[firstCopyLength];
+    const oneCopyHeight = firstOfSecondCopy ? firstOfSecondCopy.offsetTop : vp.scrollHeight / 2;
+    const wrapScrollTop = oneCopyHeight;
+    const cssMaxHeight = 104;
+    vp.style.maxHeight = Math.max(40, Math.min(cssMaxHeight, oneCopyHeight - 1)) + "px";
+    vp.scrollTop = wrapScrollTop;
+
+    btn.addEventListener("click", () => {
+      let next = vp.scrollTop - lineHeight;
+      if (next < 0) {
+        next = wrapScrollTop;
+        vp.scrollTo({ top: next, behavior: "instant" });
+      } else {
+        vp.scrollTop = next;
+      }
+    });
+  }
+
+  function run() {
+    document.querySelectorAll(".scroll-reveal").forEach((el) => initScrollReveal(el as HTMLElement));
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", run);
+  } else {
+    run();
+  }
+</script>
