@@ -1,30 +1,122 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="About" activeId="about">
-	<div class="page-content">
-		<header class="gear-hero">
-			<h1 class="gear-title">About</h1>
-			<p class="gear-subheader">Who I am and what I'm about.</p>
-			<p class="gear-description">
-				A line or two that set the tone. You can add a short intro here before the card.
-			</p>
-		</header>
+  <div class="page-content">
+    <header class="gear-hero">
+      <h1 class="gear-title">Hello :)</h1>
+      <p class="gear-subheader">I'm William, you can call me Will</p>
+    </header>
 
-		<div class="gear-card page-card">
-			<section class="page-card-section">
-				<h2 class="gear-section-title">Bio</h2>
-				<p class="page-card-text">
-					Your bio goes here. Where you're from, what you do, what you care about. Keep it readable and real.
-				</p>
-			</section>
-			<section class="page-card-section">
-				<h2 class="gear-section-title">Contact</h2>
-				<p class="page-card-text">
-					<a href="mailto:you@example.com">Email</a>, <a href="#">Twitter</a>, <a href="#">LinkedIn</a>—whatever you want to share.
-				</p>
-			</section>
-		</div>
-	</div>
+    <figure class="gear-hero-image">
+      <img src="/KamakuraJapan.jpg" alt="Kamakura, Japan in February 2026" />
+      <figcaption>
+        At <a
+          href="https://en.wikipedia.org/wiki/Kōtoku-in"
+          target="_blank"
+          rel="noopener noreferrer">Kōtoku-in</a
+        > located in <a
+          href="https://en.wikipedia.org/wiki/Kamakura"
+          target="_blank"
+          rel="noopener noreferrer">Kamakura, Japan</a
+        > during February 2026
+      </figcaption>
+    </figure>
+
+    <section class="page-card-section">
+      <p class="page-card-text">
+        I'm a Software Engineer working in Infrastructure and Configurations. A
+        few years in industry has led me to two truths:
+      </p>
+      <ul class="page-card-text">
+        <li>There is almost never a single solution to a problem.</li>
+        <li>
+          Experience, product understanding, and communication are needed to
+          produce great work.
+        </li>
+      </ul>
+      <p class="page-card-text">
+        Pursuing the 'perfect' solution means compromising and embracing
+        pragmatism. I believe in iterating, improving, and maintaining solutions
+        over time. But most of all, we need to be adaptable.
+      </p>
+      <p class="page-card-text"></p>
+      <p class="page-card-text">
+        Ironically, I used to despise programming. My first CS class was junior
+        year of high school. It was hard and time-consuming at first. Yet, when
+        the foreign became the norm and I fell into its rhythm, I knew I had
+        found 'it'. Like a snowball rolling down a hill, I did my undergrad in
+        Computer Science at <a
+          href="https://www.ucsc.edu/"
+          target="_blank"
+          rel="noopener noreferrer">UC Santa Cruz</a
+        > and, in the blink of an eye, my Masters in Computer Science at <a
+          href="https://www.ucla.edu/"
+          target="_blank"
+          rel="noopener noreferrer">UCLA</a
+        >.
+      </p>
+      <p class="page-card-text">
+        During my free time, I enjoy playing video games, bouldering, and
+        tinkering with projects (link to my <a
+          href="https://fumoarchive.com"
+          target="_blank"
+          rel="noopener noreferrer">latest project</a
+        >). I also enjoy learning new things. I'm currently focused on:
+        <ul class="page-card-text">
+          <li>Studying Japanese</li>
+          <li>Expanding my wardrobe</li>
+          <li>Staying healthy ^-^</li>
+        </ul>
+      </p>
+      <h3>Work</h3>
+      <p class="page-card-text">
+        I work at <a
+          href="https://careers.roblox.com/work-at-roblox"
+          target="_blank"
+          rel="noopener noreferrer">Roblox</a
+        > on the Configurations Team, where we manage multiple critical services (100k+
+        requests per second) with high availability and reliability. If you name any
+        of Roblox's services, we probably serve the configurations for it.
+      </p>
+      <figure class="gear-hero-image">
+        <img
+          src="/KamakuraJapan.jpg"
+          alt="Playing Roblox with my twin brother"
+        />
+        <figcaption>Playing Roblox with my twin brother</figcaption>
+      </figure>
+      <p class="page-card-text">
+        Previously, I interned at <a
+          href="https://www.maxar.com"
+          target="_blank"
+          rel="noopener noreferrer">Maxar Technologies</a
+        >, developing an internal system feature for satellites, including the
+        <a
+          href="https://www.intelsat.com/launches/galaxy-31-and-galaxy-32/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Galaxy-31 and Galaxy-32 Intelsat C-band Satellites</a
+        > launched by SpaceX. I also worked as a research assistant at the <a
+          href="https://scipp.ucsc.edu/"
+          target="_blank"
+          rel="noopener noreferrer">Santa Cruz Institute for Particle Physics</a
+        >, where we created an ML program to identify Higgs boson particles.
+        Aside from my aforementioned work, I also worked at numerous part-time jobs
+        to support myself through college.
+      </p>
+    </section>
+
+    <div class="gear-card page-card">
+      <section class="page-card-section">
+        <h2 class="gear-section-title">Contact</h2>
+        <p class="page-card-text">
+          <a href="mailto:you@example.com">Email</a>, <a href="#">Twitter</a>, <a
+            href="#">LinkedIn</a
+          >—whatever you want to share.
+        </p>
+      </section>
+    </div>
+  </div>
 </Layout>
