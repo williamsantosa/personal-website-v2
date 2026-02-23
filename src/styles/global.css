@@ -281,7 +281,7 @@
   margin-top: 1rem;
 }
 
-/* ----- Shared page layout (Home, About, Hobbies, Gear) ----- */
+/* ----- Shared page layout (Home, About, Hobbies, Gadgets) ----- */
 .page-content,
 .gear-page {
   width: 100%;
@@ -388,7 +388,7 @@
 }
 
 .gear-section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .gear-section:last-child {
@@ -396,7 +396,7 @@
 }
 
 .gear-section-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .gear-section-title-row {
