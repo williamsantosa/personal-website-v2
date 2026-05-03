@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { TalentBrowser } from "../../components/deepwoken/TalentBrowser";
+---
+
+<Layout title="Deepwoken Talents" activeId="deepwoken">
+  <div class="not-prose flex flex-col gap-4">
+    <div>
+      <h1 class="text-2xl font-bold">Deepwoken Talents</h1>
+      <p class="text-sm text-base-content/60 mt-1">
+        Data obtained from the
+        <a
+          href="https://deepwoken.fandom.com/wiki/Talents"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link link-hover text-base-content/80">Deepwoken Wiki Talents page</a>.
+      </p>
+    </div>
+    <TalentBrowser client:load />
+  </div>
+</Layout>

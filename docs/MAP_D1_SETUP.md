@@ -1,53 +1,45 @@
-# Visitor map & D1 setup
+# Visitor map and D1
 
-The landing page has a "Where are you from?" map. Visitors click to drop a pin; coordinates are stored in **Cloudflare D1** (rounded to ~1 km for privacy).
+The home page has a “where are you from?” map. Clicks drop a pin. Pins live in **Cloudflare D1**. We round coordinates to about one kilometer. That is enough for a map. It hides exact addresses.
 
-## 1. Create the D1 database
+## Create the database
 
 ```bash
 npx wrangler d1 create visitor-pins
 ```
 
-Copy the `database_id` from the output.
+Copy `database_id` from the output.
 
-## 2. Wire the database into the project
+## Wire it in
 
-Edit `wrangler.jsonc` and replace `YOUR_D1_DATABASE_ID` with the id from step 1:
+Open `wrangler.jsonc`. Put your id where it says to. The binding name is `DB`. The database name in the file should match `visitor-pins` unless you changed it when you created the database.
 
-```jsonc
-"d1_databases": [
-  {
-    "binding": "DB",
-    "database_name": "visitor-pins",
-    "database_id": "<paste-your-id-here>"
-  }
-]
-```
+## Run the migration
 
-## 3. Run the migration
-
-**Local (dev):**
+**On your machine (local D1):**
 
 ```bash
 npx wrangler d1 execute visitor-pins --local --file=./migrations/0000_create_pins.sql
 ```
 
-**Production (after deploy):**
+**In production (after you deploy the Worker config):**
 
 ```bash
 npx wrangler d1 execute visitor-pins --remote --file=./migrations/0000_create_pins.sql
 ```
 
-## 4. Regenerate types (optional)
+If you use the same D1 for other features, run the rest of the migrations in order. See [`DEEPWOKEN_TALENTS.md`](./DEEPWOKEN_TALENTS.md) for the talent tables.
+
+## Types (optional)
 
 ```bash
 npx wrangler types
 ```
 
-Then run `astro dev` or `npm run preview` as usual. The map will load existing pins and allow new ones on click.
+Then run `npm run dev` or `npm run preview`. The map loads pins. New clicks add pins.
 
 ## Notes
 
-- **Privacy:** Only `lat` and `lng` are stored, rounded to 2 decimals (~1.1 km). No IP or other identifiers.
-- **Abuse:** Consider adding rate limiting (e.g. by IP or a simple CAPTCHA) if the map gets spammed.
-- **Bots:** The copy asks "how many of the people on here are bots or not" as a light-hearted prompt; you can add bot detection later if you want.
+- **Privacy:** We store `lat` and `lng` only. They are rounded. We do not store IP or names on the pin row by default.
+- **Abuse:** Add rate limits if strangers spam you.
+- **Bots:** The UI joke about bots is optional. You can add checks later.

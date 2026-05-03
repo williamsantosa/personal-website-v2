@@ -67,6 +67,17 @@ For the workflow this repo uses, you **do not** need to connect a Git repository
 
 Astro turns files under `src/pages/` into routes. Shared UI lives under `src/components/`. Static files go in `public/`.
 
+## Deepwoken talent browser
+
+`/deepwoken` is a talent reference backed by D1. Full setup, migrations, wiki refresh, and file map: **[`docs/DEEPWOKEN_TALENTS.md`](./docs/DEEPWOKEN_TALENTS.md)**.
+
+## Repo docs
+
+| Doc | What it covers |
+| --- | ---------------- |
+| [`docs/MAP_D1_SETUP.md`](./docs/MAP_D1_SETUP.md) | Visitor map pin storage and first migration. |
+| [`docs/DEEPWOKEN_TALENTS.md`](./docs/DEEPWOKEN_TALENTS.md) | Talent pipeline: migrations through `0004`, wiki parse, seed, API and UI pointers. |
+
 ## More links
 
 - [Astro docs](https://docs.astro.build)
