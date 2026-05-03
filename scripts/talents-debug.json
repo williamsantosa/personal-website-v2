@@ -196,7 +196,7 @@
       }
     ],
     "notes": [
-      "After dodging gain the status effect for 2 seconds, reducing the damage of the next hit by 60%.",
+      "After dodging gain the Ironsinger's Instinct status effect for 2 seconds, reducing the damage of the next hit by 60%.",
       "The user visually gains a grey metallic shine upon for the duration, clearing on hit.",
       "Has a cooldown of 18 seconds, starting immediately upon dodge."
     ]
@@ -278,7 +278,7 @@
       "Getting hit by another element immediately changes your resistance to that element. i.e Getting hit by Shadowcast Mantras while having Galebreathe resistance will immediately change your resistance type to Shadowcast and vice versa.",
       "This means that multi-hitting Mantras are much less potent, even if your Everchanging Aegis type was not attuned to that Mantra.",
       "Your Aegis type can swap on block, dodge, and parry. You do not need to actually be hit by the attack for the swap to occur, largely mitigating the downside.",
-      "and self damage do not proc Everchanging Aegis.",
+      "Burn and self damage do not proc Everchanging Aegis.",
       "The damage type you become resistant to is indicated by a colored shield, continuous damage of the same element will give a colored outline of the damage type.",
       "Flamecharm: Orange / Frostdraw: Blue / Thundercall: Yellow / Galebreathe: Green / Shadowcast: Purple / Ironsing: Grey / Bloodrend: Red",
       "Does not affect attacks that do not deal elemental damage."
@@ -971,7 +971,7 @@
       "Flame Within grants a mobility buff, NOT a speed boost (it will not proc Talents such as Speed Demon).",
       "Because Flame Within's mobility buff is a flat 12.5% increase instead of a multiplier to your movement speed, it allows you to move when you otherwise wouldn't be able to. Like during NPC dialogue, when mining, or when casting certain mantras like Arc Suit or Iron Skin.",
       "It is a general damage buff, and as such it'll affect all sources of damage that can be modified.",
-      "Flame Within can be enabled while knocked. This is meant to synergize with . Doing so will halve the strength of .",
+      "Flame Within can be enabled while knocked. This is meant to synergize with Phoenix Flames. Doing so will halve the strength of Phoenix Flames.",
       "Deals self-damage on cast, separate from the burn damage. This self damage can be resisted with the Deepscorn Casque, elemental resistance (it deals Flamecharm damage), and many other sources of damage reduction.",
       "Grotesque Resilience reduces the damage taken from Flame Within's burn DoT by 25%.",
       "Deepfire Ring will lower Flame Within's duration down to 25s without affecting the burn damage taken. This is a direct downgrade for Flame within.",
@@ -1155,7 +1155,7 @@
         "altGroup": null
       }
     ],
-    "description": "Your dashes become Jet Dashes, allowing you to attack while dashing.",
+    "description": "In Arc Suit Your dashes become Jet Dashes, allowing you to attack while dashing.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -1181,7 +1181,7 @@
         "altGroup": null
       }
     ],
-    "description": "When blockbroken, eject from your suit.",
+    "description": "In Arc Suit When blockbroken, eject from your suit.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -1203,7 +1203,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Delta to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay Delta 10 to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 3
       }
@@ -1225,7 +1225,7 @@
         "altGroup": null
       }
     ],
-    "description": "Your Arcwarder Mantras deal increased damage.",
+    "description": "In Arc Suit Your Arcwarder Mantras deal increased damage.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -1247,7 +1247,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Delta to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay Delta 10 to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 3
       }
@@ -1270,7 +1270,7 @@
         "altGroup": null
       }
     ],
-    "description": "You can block attacks from any direction and cannot be backstabbed.",
+    "description": "In Arc Suit You can block attacks from any direction and cannot be backstabbed.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -1292,14 +1292,14 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Delta to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay Delta 10 to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 3
       }
     ],
     "notes": [
       "While in Arc Suit, you can block attacks that are coming from any direction.",
-      "Talents that proc on backstab (e.g. ) cannot proc on you while you're in Arc Suit.",
+      "Talents that proc on backstab (e.g. Spine Cutter) cannot proc on you while you're in Arc Suit.",
       "Does not prevent assassinations or nullify damage from attacks that hit your back."
     ]
   },
@@ -1315,7 +1315,7 @@
         "altGroup": null
       }
     ],
-    "description": "Holding Spacebar after double jumping propels you up for a short duration.",
+    "description": "In Arc Suit Holding Spacebar after double jumping propels you up for a short duration.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -1337,7 +1337,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Delta to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay Delta 10 to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 3
       }
@@ -1359,7 +1359,7 @@
         "altGroup": null
       }
     ],
-    "description": "Outgoing and incoming enchant effects are nullified. Can be toggled with .",
+    "description": "In Arc Suit Outgoing and incoming enchant effects are nullified. Can be toggled with input=N.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -1381,7 +1381,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Delta to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay Delta 10 to skip Arcwarder's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 3
       }
@@ -1802,7 +1802,7 @@
         "altGroup": null
       }
     ],
-    "description": "Reduces the duration you're and for by 25%. (+5 Sanity)",
+    "description": "Reduces the duration you're Ragdolled and Unconscious for by 25%. (+5 Sanity)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -1959,7 +1959,7 @@
       "The second hit does not count as a weapon hit, meaning it ignores your weapon's Chip stat, it cannot proc enchants, and it cannot proc any \"on flourish\" Talents.",
       "The second hit does not proc on non-humanoid targets.",
       "These weapons are: Central Dirk, Halberd, Inquisitor's Greatsword, Inquisitor's Thorn, Markor's Inheritor, Officer Saber, Rifle Spear, Sovereign's Punishment, and Warden Ceremonial Sword.",
-      "The variants of all of the above weapons proc this effect as well.",
+      "The Alloyed variants of all of the above weapons proc this effect as well.",
       "Despite being found in the armory, the Adretian Axe, Battleaxe, Cavalry Saber, Stiletto, Sword, and Worshipper Longsword do not proc this effect."
     ]
   },
@@ -2014,14 +2014,14 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay to the wall text you obtained the Oath from to skip Blindseer's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay 10 to the wall text you obtained the Oath from to skip Blindseer's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 2
       }
     ],
     "notes": [
       "Invisible players and monsters are revealed by a Blindseer Eye icon showcasing their current position.",
-      "Specifically reveals players under the effects of , Static Flash Clone, Cheap Trick, Illusory Servant's casting animation, Beast Burrow, Portals, and other invisibility effects.",
+      "Specifically reveals players under the effects of Ghost, Static Flash Clone, Cheap Trick, Illusory Servant's casting animation, Beast Burrow, Portals, and other invisibility effects.",
       "With this Talent, the Tacet is completely nullified, allowing you to see cloaked players normally.",
       "This works on anyone who is invisible, yourself and monsters included."
     ]
@@ -2370,7 +2370,7 @@
       "Blight Meter gain has no cooldown. Landing Blightsurger Mantras grants 15% Blight Meter. Landing Basic Attacks grants 10% Blight Meter. Landing weapon criticals, Thundercall Mantras, or Galebreathe Mantras grants 5% Blight Meter per hit.",
       "At full Blight Meter, Sovereign State lasts 12.5 seconds.",
       "Sovereign State has a 10 second activation cooldown once the duration runs out.",
-      "You can press while having at least 30% Blight Meter to activate Sovereign State. While in Sovereign State, your Blight Meter will passively decay, and it cannot be deactivated.",
+      "You can press input=X while having at least 30% Blight Meter to activate Sovereign State. While in Sovereign State, your Blight Meter will passively decay, and it cannot be deactivated.",
       "This keybind can be changed in settings.",
       "While in Sovereign State, your weapon will be replaced with the Sovereign Bangle.",
       "Skycrash will be automatically used twice in quick succession while in this state.",
@@ -2629,7 +2629,7 @@
       "Deepscorn Casque and the Enhanced Flow Talent are the only two effects in the game that can reduce the self damage taken by Rush Hour.",
       "Grants a 15% damage buff, affected by the damage modifier cap.",
       "Increases blood bar damage by +35% (additive).",
-      "Grants a 30% active speed boost. This counts for Talents such as and .",
+      "Grants a 30% active speed boost. This counts for Talents such as Speed Demon and Cheap Shot.",
       "Recover 5% Blood when dealing damage (0.35s cooldown). Burn damage cannot proc this effect.",
       "If you have the Enhanced Flow Talent, landing basic attacks during Rush Hour will grant Temporary Health, equal to 30% of your weapon's scaled damage.",
       "Having Rush Hour active doubles the duration of the Torture Mastery status effect."
@@ -2950,7 +2950,7 @@
     ],
     "notes": [
       "Lasts for 4 seconds.",
-      "Procs by pressing (Works even if you only have one Fist Style)",
+      "Procs by pressing input=Y (Works even if you only have one Fist Style)",
       "8 Second cooldown between style change.",
       "This Talent does not work with Jus Karita."
     ]
@@ -2967,7 +2967,7 @@
         "altGroup": null
       }
     ],
-    "description": "Basic Attacks will slightly slow your enemy for 2 seconds. Running attacks will slow your enemy for 3 seconds. Gain +20% posture damage against enemies with speed boosts.",
+    "description": "Greataxes Basic Attacks will slightly slow your enemy for 2 seconds. Running attacks will slow your enemy for 3 seconds. Gain +20% posture damage against enemies with speed boosts.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -2999,7 +2999,7 @@
         "altGroup": null
       }
     ],
-    "description": "Attacking an enemy slowed by your Greataxe grants you temporary hyperarmor.",
+    "description": "Greataxes Attacking an enemy slowed by your Greataxe grants you temporary hyperarmor.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -3038,7 +3038,7 @@
         "altGroup": null
       }
     ],
-    "description": "Hitting an enemy slowed by your Greataxe temporarily reduces how far they can roll and applies Sluggish to PvE enemies for a few seconds.",
+    "description": "Greataxes Hitting an enemy slowed by your Greataxe temporarily reduces how far they can roll and applies Sluggish to PvE enemies for a few seconds.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -3077,7 +3077,7 @@
         "altGroup": null
       }
     ],
-    "description": "Block breaking an enemy applies knockdown.",
+    "description": "Greataxes Block breaking an enemy applies knockdown.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -3112,10 +3112,16 @@
       }
     ],
     "description": "Being flourished grants you 10% posture resistance for 20s.",
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "prereqType": "attribute",
+        "prereqValue": "65 Fortitude",
+        "isAlternative": false,
+        "altGroup": null
+      }
+    ],
     "notes": [
-      "Defensive Reprisal's duration will be reduced by 0.177s for every point in Fortitude below its requirements, having a minimum duration of 15.55s duration with 40 Fortitude.",
-      "Prerequisities: 65 Fortitude"
+      "Defensive Reprisal's duration will be reduced by 0.177s for every point in Fortitude below its requirements, having a minimum duration of 15.55s duration with 40 Fortitude."
     ]
   },
   {
@@ -3131,10 +3137,16 @@
       }
     ],
     "description": "Parrying an opponent and then parrying another enemy in quick succession applies slow for 7s.",
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "prereqType": "attribute",
+        "prereqValue": "55 Fortitude",
+        "isAlternative": false,
+        "altGroup": null
+      }
+    ],
     "notes": [
-      "Dancing Guard's duration will be reduced by 0.086s for every point in Fortitude below its requirements, having a minimum duration of 4.86s at 30 Fortitude.",
-      "Prerequisities: 55 Fortitude"
+      "Dancing Guard's duration will be reduced by 0.086s for every point in Fortitude below its requirements, having a minimum duration of 4.86s at 30 Fortitude."
     ]
   },
   {
@@ -3183,10 +3195,22 @@
       }
     ],
     "description": "Hitting Dazed enemies grants you 10% posture resistance for 15s.",
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "prereqType": "attribute",
+        "prereqValue": "55 Fortitude",
+        "isAlternative": false,
+        "altGroup": null
+      },
+      {
+        "prereqType": "attribute",
+        "prereqValue": "25 Strength",
+        "isAlternative": false,
+        "altGroup": null
+      }
+    ],
     "notes": [
-      "Knuckle Guard's duration will be reduced by 0.1s for every point of Fortitude and Strength below its requirements, having a minimum possible duration of 10.4 seconds with 30 Fortitude and 4 Strength, though this isn't very realistic.",
-      "Prerequisities: 55 Fortitude, 25 Strength"
+      "Knuckle Guard's duration will be reduced by 0.1s for every point of Fortitude and Strength below its requirements, having a minimum possible duration of 10.4 seconds with 30 Fortitude and 4 Strength, though this isn't very realistic."
     ]
   },
   {
@@ -3345,7 +3369,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give Vice Warden Morredh instantly skipping Chainwarden's progression (this can only be done if you've fully progressed the Oath at least once).",
+        "prereqValue": "give Vice Warden Morredh 10 instantly skipping Chainwarden's progression (this can only be done if you've fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 3
       }
@@ -3390,7 +3414,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give Vice Warden Morredh instantly skipping Chainwarden's progression (this can only be done if you've fully progressed the Oath at least once).",
+        "prereqValue": "give Vice Warden Morredh 10 instantly skipping Chainwarden's progression (this can only be done if you've fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 3
       }
@@ -3455,17 +3479,18 @@
     "notes": [
       "The Effectiveness of Defiance will be lessened if you do not meet its Willpower requirement.",
       "Currently, the only things Defiance cuts in half are:",
-      "Flamecharm's damage",
-      "Frostdraw's duration",
-      "Galebreathe's duration",
-      "Galebreathe's duration",
-      "Frostdraw's stacks",
-      "Thundercall's stacks",
-      "Shadowcast's duration",
-      "gain",
+      "Flamecharm's Burn damage",
+      "Frostdraw's Chill duration",
+      "Galebreathe's Winded duration",
+      "Galebreathe's Suffocation duration",
+      "Frostdraw's Crystal stacks",
+      "Thundercall's Surge stacks",
+      "Shadowcast's Sightless Still duration",
+      "Blood Poisoning",
+      "Wither gain",
       "Ring of Pestilence duration",
       "The potency of potions",
-      "Time (cut by 50% multiplicatively after other modifiers)"
+      "Time Unconscious (cut by 50% multiplicatively after other modifiers)"
     ]
   },
   {
@@ -3750,7 +3775,7 @@
         "altGroup": null
       }
     ],
-    "description": "Enemies recover 20% less Posture when parrying. (+1 Posture)",
+    "description": "Greatsword Enemies recover 20% less Posture when parrying. (+1 Posture)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -3784,7 +3809,7 @@
         "altGroup": null
       }
     ],
-    "description": "Your posture damage is increased by 10%.",
+    "description": "Heavy Weapons Your posture damage is increased by 10%.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -3820,7 +3845,7 @@
         "altGroup": null
       }
     ],
-    "description": "You take 15% less posture damage when parried. (+1 Posture)",
+    "description": "Greathammer You take 15% less posture damage when parried. (+1 Posture)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -3946,7 +3971,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to Lord Regent",
+        "prereqValue": "give 10 to Lord Regent",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -3995,7 +4020,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to Lord Regent",
+        "prereqValue": "give 10 to Lord Regent",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -4063,7 +4088,7 @@
         "altGroup": null
       }
     ],
-    "description": "Instantly execute enemies finished with the critical attack of your dagger.",
+    "description": "Daggers Instantly execute enemies finished with the critical attack of your dagger.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -4100,7 +4125,7 @@
         "altGroup": null
       }
     ],
-    "description": "Cancelling an enemy's Mantra windup with your Basic Attacks now deals 15% more damage",
+    "description": "Daggers Cancelling an enemy's Mantra windup with your Basic Attacks now deals 15% more damage",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -4154,7 +4179,7 @@
         "altGroup": null
       }
     ],
-    "description": "When you successfully flourish an enemy, you throw out a dagger afterwards",
+    "description": "Daggers When you successfully flourish an enemy, you throw out a dagger afterwards",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -4208,7 +4233,7 @@
         "altGroup": null
       }
     ],
-    "description": "Press during the wind up of your Ice Spikes to create traps around you instead of spawning a spike in the normal spot.",
+    "description": "Press input=F during the wind up of your Ice Spikes to create traps around you instead of spawning a spike in the normal spot.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -4228,7 +4253,8 @@
       "Activates a spike upon being stepped on.",
       "There are small, blue, transparent \"traps\" indicating the hitboxes, placed randomly around the user.",
       "Can stack multiple times, allowing for very high amounts of traps in one spot.",
-      "Extends Ice Spike's cooldown by 5s, to 20s total."
+      "Extends Ice Spike's cooldown by 5s, to 20s total.",
+      "text=Spike Traps is no longer obtainable. For users who already have Spike Traps, activating it will only place 1 trap, no matter how many Cloud/Stratus Stones the Mantra was modified with."
     ]
   },
   {
@@ -4850,13 +4876,13 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay a total of to Klaris",
+        "prereqValue": "pay a total of 60 to Klaris",
         "isAlternative": true,
         "altGroup": 1
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay to Klaris to skip Dawnwalker's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay 10 to Klaris to skip Dawnwalker's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -4887,13 +4913,13 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay a total of to Klaris",
+        "prereqValue": "pay a total of 75 to Klaris",
         "isAlternative": true,
         "altGroup": 1
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay to Klaris to skip Dawnwalker's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay 10 to Klaris to skip Dawnwalker's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -4925,13 +4951,13 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay a total of to Klaris",
+        "prereqValue": "pay a total of 75 to Klaris",
         "isAlternative": true,
         "altGroup": 1
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay to Klaris to skip Dawnwalker's progression entirely (requires you to have fully progressed the Oath at least once).",
+        "prereqValue": "pay 10 to Klaris to skip Dawnwalker's progression entirely (requires you to have fully progressed the Oath at least once).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -5126,7 +5152,7 @@
       }
     ],
     "notes": [
-      "Applies for 7 seconds and .",
+      "Applies Chill for 7 seconds and Bottom Freeze.",
       "Applies fragile freeze if the critical guardbreaks.",
       "When using Crystallization Path, it'll spawn the VFX and play the sound effects for creating crystals, but won't actually inflict any.",
       "3 second cooldown."
@@ -5198,7 +5224,7 @@
       "This critical has the M1 tag.",
       "Deals 35 flat damage with no scaling, though this can be buffed with damage modifiers.",
       "This works with the following weapons: Adretian Axe, Central Dirk, Halberd, Inquisitor's Greatsword, Inquisitor's Thorn, Markor's Inheritor, Officer Saber, Rifle Spear, Sovereign's Punishment, and Warden Ceremonial Sword.",
-      "The variants of all of the above weapons proc this effect as well."
+      "The Alloyed variants of all of the above weapons proc this effect as well."
     ]
   },
   {
@@ -5465,7 +5491,7 @@
         "altGroup": null
       }
     ],
-    "description": "When above 33% health and two-handing, posture damage taken is reduced by 5%. (+1 Passive Agility)",
+    "description": "Medium Weapons When above 33% health and two-handing, posture damage taken is reduced by 5%. (+1 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -5917,8 +5943,8 @@
     ],
     "notes": [
       "This deals a separate instance of physical damage, scaling on your weapon's damage and your current Ether%.",
-      "Unlike , this has no cooldown.",
-      "You can proc Behind you and at the same time, but the proc window is very tight."
+      "Unlike Spine Cutter, this has no cooldown.",
+      "You can proc Behind you and Spine Cutter at the same time, but the proc window is very tight."
     ]
   },
   {
@@ -6077,7 +6103,7 @@
       "Heals a flat 10% health to any targets hit. 10s CD.",
       "Can heal non-allies or even mobs.",
       "Unparryable and unblockable.",
-      "Can become a damaging tool with the Bloodrend Talent, ."
+      "Can become a damaging tool with the Bloodrend Talent, Hemorrhaging Blow."
     ]
   },
   {
@@ -6153,7 +6179,7 @@
     "tree": "Fish",
     "rarity": "Rare",
     "attributes": [],
-    "description": "When your Blood is over 50%, you won't drown when in water. Gain additional healing from kncking others in water. (+5 Health)",
+    "description": "When your Blood is over 50%, you won't drown when Unconscious in water. Gain additional healing from kncking others Unconscious in water. (+5 Health)",
     "prerequisites": [],
     "notes": [
       "The old Scuba Drowner Talent was merged into this Talent."
@@ -7582,7 +7608,7 @@
         "altGroup": 1
       }
     ],
-    "description": "Your gun attacks now ignore 10% of an opponent's blunt armor. Applied Multiplicatively before PEN is applied.",
+    "description": "Guns Your gun attacks now ignore 10% of an opponent's blunt armor. Applied Multiplicatively before PEN is applied.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -8065,7 +8091,7 @@
         "altGroup": null
       }
     ],
-    "description": "Guardbreaking an opponent with your Critical rattles their brain in its container, causing increased blood loss, applies Stagger to PvE enemies and blurs their vision.",
+    "description": "Clubs Guardbreaking an opponent with your Critical rattles their brain in its container, causing increased blood loss, applies Stagger to PvE enemies and blurs their vision.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -8097,7 +8123,7 @@
         "altGroup": null
       }
     ],
-    "description": "Bear Trapped targets deal 20% less posture. Dazed targets deal 20% less posture. This can stack.",
+    "description": "Clubs Bear Trapped targets deal 20% less posture. Dazed targets deal 20% less posture. This can stack.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -8132,7 +8158,7 @@
         "altGroup": null
       }
     ],
-    "description": "Aerial attacks do 25% more posture damage when blocked.",
+    "description": "Clubs Aerial attacks do 25% more posture damage when blocked.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -8325,10 +8351,10 @@
       "Gives a burst of insanity to yourself.",
       "Immediately lose 15% sanity on use.",
       "If above 80% sanity, immediately lose sanity down to 65%.",
-      "You start benefitting from Talents that require insanity to use (namely )",
+      "You start benefitting from Talents that require insanity to use (namely Lose Your Mind)",
       "Talents that need you to be losing sanity to proc are passively activated for 15 seconds.",
-      "Namely Shared Misery and .",
-      "Note that this passive does NOT work with , as it only procs based on your current sanity percentage. And while Heretic's Sutra can help with sanity loss, it does not passively activate ."
+      "Namely Shared Misery and Piercing Will.",
+      "Note that this passive does NOT work with Lose Your Mind, as it only procs based on your current sanity percentage. And while Heretic's Sutra can help with sanity loss, it does not passively activate Lose Your Mind."
     ]
   },
   {
@@ -8382,7 +8408,7 @@
         "altGroup": null
       }
     ],
-    "description": "You refuse. You cannot be knocked off your feet until you are knocked completely . Also reduces the duration of . (+5 Health, +2 Posture)",
+    "description": "You refuse. You cannot be knocked off your feet until you are knocked completely Unconscious. Also reduces the duration of Knockdown. (+5 Health, +2 Posture)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -8423,7 +8449,7 @@
         "altGroup": null
       }
     ],
-    "description": "Players and regular mobs cannot instantly execute you while you're on your feet. Protects you from one instance of instant execution when . 60s CD.",
+    "description": "Players and regular mobs cannot instantly execute you while you're on your feet. Protects you from one instance of instant execution when Unconscious. 60s CD.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -9352,7 +9378,7 @@
     "prerequisites": [],
     "notes": [
       "Start with 20% more stealth and gain a 1.2x stealth gain multiplier.",
-      "This Stealth gain multiplier does not apply to Stealth gained from Crouching, , Tacet, or .",
+      "This Stealth gain multiplier does not apply to Stealth gained from Crouching, Lowstride, Tacet, or Tacet Minimization.",
       "This Stealth multiplier affects the Obvious Flaw, reducing your Stealth by 24%. With the innate Stealth Felinor has, this will result in a net -4% Stealth on spawn.",
       "Gain bonus agility when climbing on all kind of surfaces, not only wooden ones."
     ]
@@ -9548,7 +9574,7 @@
       }
     ],
     "notes": [
-      "The status effect comes from Stature Break and Maiming Claws."
+      "The Paused Posture status effect comes from Stature Break and Maiming Claws."
     ]
   },
   {
@@ -9646,8 +9672,8 @@
       }
     ],
     "notes": [
-      "This applies the Status effect, denying most sources of Posture restoration.",
-      "During Paused Posture, you cannot restore posture by: passive posture regen, Parrying, or the Talent. All other forms of posture restoration entirely ignore this status effect."
+      "This applies the Paused Posture Status effect, denying most sources of Posture restoration.",
+      "During Paused Posture, you cannot restore posture by: passive posture regen, Parrying, or the Steady Nerves Talent. All other forms of posture restoration entirely ignore this status effect."
     ]
   },
   {
@@ -9724,10 +9750,10 @@
         "altGroup": null
       }
     ],
-    "description": "Grants you the ability to command Metal as an Ironsinger. Press to Pull on Metal Rods.",
+    "description": "Grants you the ability to command Metal as an Ironsinger. Press input=X to Pull on Metal Rods.",
     "prerequisites": [],
     "notes": [
-      "Ironsing mantras apply stacks of Metal Rods on targets. Pressing will pull affected towards you, with the strength of the pull depending on the amount of Metal Rods present.",
+      "Ironsing mantras apply stacks of Metal Rods on targets. Pressing input=X will pull affected towards you, with the strength of the pull depending on the amount of Metal Rods present.",
       "You cannot apply more than 5 Metal Rods to one target, unless you have one of the Rending Needle Talents.",
       "Rod pull's keybind can be configured in settings.",
       "Obtained at 1 Ironsing"
@@ -9809,7 +9835,7 @@
       }
     ],
     "notes": [
-      "While at 100 Ironsing, bleed damage is reduced from 15% scaled damage to 10.5%. Bleed from is reduced from 7.5% scaled damage to 5.25%.",
+      "While at 100 Ironsing, bleed damage is reduced from 15% scaled damage to 10.5%. Bleed from Speed Demon is reduced from 7.5% scaled damage to 5.25%.",
       "Blood loss reduction is less effective if you are using the Curse of the No Life King Enchantment.",
       "Blood loss reduction stacks multiplicatively with Cauterized Wounds.",
       "Alloyblood's effects linearly scale with Ironsing investment up to its requirement, losing 0.3% bleed damage reduction and 0.75% blood loss reduction per point in Ironsing below 100.",
@@ -10083,7 +10109,7 @@
       }
     ],
     "notes": [
-      "Unlock requirement: wipe while using the memento."
+      "Unlock requirement: wipe while using the Strange Merchant memento."
     ]
   },
   {
@@ -10114,7 +10140,7 @@
       }
     ],
     "notes": [
-      "Press during Grand Javelin's windup to activate this effect.",
+      "Press input=F during Grand Javelin's windup to activate this effect.",
       "Does not work in Guild Bases or in Layer 1 of The Depths."
     ]
   },
@@ -10133,7 +10159,7 @@
     "description": "Striking an opponent in the back with mobility mantras or Basic Attacks now steals and grants additional momentum.",
     "prerequisites": [],
     "notes": [
-      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
+      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay 10 to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
     ]
   },
   {
@@ -10155,7 +10181,7 @@
       "30 second cooldown.",
       "Procs through block/parry/dodge, despite the description stating otherwise. But it does not proc on self damage.",
       "Opposite to the description, Decisive Wind's has no \"aura\", there is no SFX or VFX, with the only activation cue for this talent being the Cooldown Indicator.",
-      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
+      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay 10 to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
     ]
   },
   {
@@ -10174,7 +10200,7 @@
     "prerequisites": [],
     "notes": [
       "When proccing on non-humanoid NPCs, sends you to the center of the NPC's hitbox.",
-      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
+      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay 10 to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
     ]
   },
   {
@@ -10193,7 +10219,7 @@
     "prerequisites": [],
     "notes": [
       "Extends your dash distance and makes you invisible for a very brief duration when you dash.",
-      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
+      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay 10 to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
     ]
   },
   {
@@ -10212,7 +10238,7 @@
     "prerequisites": [],
     "notes": [
       "Stratos Steps will only proc twice before going on a cooldown. Said cooldown applies to individual steps. Additionally, Stratos Step consumes Ether per step.",
-      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
+      "Requirements: Oath: Jetstriker, speak to Alirian after collecting X Jetstriker Orbs OR pay 10 to Alirian to skip Jetstriker's progression entirely (requires you to have fully progressed the Oath at least once)."
     ]
   },
   {
@@ -10492,7 +10518,7 @@
         "altGroup": null
       }
     ],
-    "description": "Damage dealt with the tip of the spear is increased by 10% (+2 Passive Agility)",
+    "description": "Spears Damage dealt with the tip of the spear is increased by 10% (+2 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -10521,7 +10547,7 @@
         "altGroup": null
       }
     ],
-    "description": "Posture breaking an opponent grants you +50% PEN for 3 seconds.",
+    "description": "Spears Posture breaking an opponent grants you +50% PEN for 3 seconds.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -10553,7 +10579,7 @@
         "altGroup": null
       }
     ],
-    "description": "The first hit of your Spear's Critical Attack will deal greatly increased posture damage. Subsequent hits will do reduced posture damage.",
+    "description": "Spears The first hit of your Spear's Critical Attack will deal greatly increased posture damage. Subsequent hits will do reduced posture damage.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -10585,7 +10611,7 @@
         "altGroup": null
       }
     ],
-    "description": "Hitting an enemy after a perfect dodge makes your next attack deal 30% bleed damage. If that attack would already bleed, it adds +10% chip damage instead. (+4 Passive Agility)",
+    "description": "Spears Hitting an enemy after a perfect dodge makes your next attack deal 30% bleed damage. If that attack would already bleed, it adds +10% chip damage instead. (+4 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -10767,7 +10793,7 @@
         "altGroup": null
       }
     ],
-    "description": "You can mark objects or enemies by pressing , which will mark them for all nearby allies.",
+    "description": "You can mark objects or enemies by pressing input=Z, which will mark them for all nearby allies.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -10820,7 +10846,7 @@
       }
     ],
     "notes": [
-      "Activated by using Callout (pressing ).",
+      "Activated by using Callout (pressing input=Z).",
       "Callout's keybind can be configured in settings.",
       "Disabled on players with Not a Scratch.",
       "Note: This Talent does not work if you don't have Callout, you'll need Callout to use Soulbreaker's Spotter."
@@ -11231,7 +11257,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to The Entropy Catalyst and spend to instantly progress your Oath (requires you to have fully progressed Linkstrider previously).",
+        "prereqValue": "speak to The Entropy Catalyst and spend 10 to instantly progress your Oath (requires you to have fully progressed Linkstrider previously).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -11262,7 +11288,7 @@
         "altGroup": null
       }
     ],
-    "description": "Activate by pressing while hovering over an ally or enemy. The Links are destroyed when you receive damage from a non-ally, you stray too far or you activate it again. Only one cord of each type may exist at once, links give a 3 second warning in break range, in the warning phase, they can't be broken.",
+    "description": "Activate by pressing input=X while hovering over an ally or enemy. The Links are destroyed when you receive damage from a non-ally, you stray too far or you activate it again. Only one cord of each type may exist at once, links give a 3 second warning in break range, in the warning phase, they can't be broken.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -11278,7 +11304,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to The Entropy Catalyst and spend to instantly progress your Oath (requires you to have fully progressed Linkstrider previously).",
+        "prereqValue": "speak to The Entropy Catalyst and spend 10 to instantly progress your Oath (requires you to have fully progressed Linkstrider previously).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -11463,7 +11489,7 @@
         "altGroup": null
       }
     ],
-    "description": "Your running attacks now apply a brief amount of daze and Stagger PvE enemies.",
+    "description": "Rifles Your running attacks now apply a brief amount of daze and Stagger PvE enemies.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -11501,7 +11527,7 @@
         "altGroup": null
       }
     ],
-    "description": "Activate to make your rifle shoot bullets for 15 seconds.",
+    "description": "Rifles Activate to make your rifle shoot bullets for 15 seconds.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -12071,7 +12097,7 @@
         "altGroup": null
       }
     ],
-    "description": "An application of your Soul Murmur that enables one to channel the murmur into raw strength. Press .",
+    "description": "An application of your Soul Murmur that enables one to channel the murmur into raw strength. Press input=H.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -12154,7 +12180,7 @@
     ],
     "notes": [
       "Activated by utilizing the Ardour Scream tool in your inventory or holding and releasing your Ardour hotkey.",
-      "Ardour's keybind can be configured in settings, changing the key you'll need to hold in order to activate Ardour Scream (default ).",
+      "Ardour's keybind can be configured in settings, changing the key you'll need to hold in order to activate Ardour Scream (default input=H).",
       "Takes 100% Ether to be used, therefore deactivating Ardour.",
       "Can be used at 40% Ether rather than needing to be at 100% with the Soulbreaker Oath.",
       "Instead of debuffing affected players and making them take 12.5% more damage, it actually applies an on-hit buff when attacking someone affected by Ardour Scream, granting a 25% damage buff to that attack. This means Ardour Scream is affected by the damage modifier cap.",
@@ -12174,7 +12200,7 @@
         "altGroup": null
       }
     ],
-    "description": "An application of your Soul Murmur that enables the user to perceive the subtle murmur emanating from all things. Press while crouched.",
+    "description": "An application of your Soul Murmur that enables the user to perceive the subtle murmur emanating from all things. Press input=G while crouched.",
     "prerequisites": [
       {
         "prereqType": "action",
@@ -12208,7 +12234,7 @@
         "altGroup": null
       }
     ],
-    "description": "An application of your Soul Murmur that enables the user to suppress their own murmur. Press while crouched.",
+    "description": "An application of your Soul Murmur that enables the user to suppress their own murmur. Press input=T while crouched.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -12328,7 +12354,7 @@
         "altGroup": null
       }
     ],
-    "description": "Moving while blocking with a shield no longer slows you down.",
+    "description": "Fists Moving while blocking with a shield no longer slows you down.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -12383,7 +12409,7 @@
         "altGroup": null
       }
     ],
-    "description": "Every 6 hits with your fists builds up a shield of endurance reducing incoming damage by 15%.",
+    "description": "Fists Every 6 hits with your fists builds up a shield of endurance reducing incoming damage by 15%.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -12455,7 +12481,7 @@
         "altGroup": null
       }
     ],
-    "description": "Gain more parry frames the lower your health is.",
+    "description": "Rapier Gain more parry frames the lower your health is.",
     "prerequisites": [],
     "notes": [
       "Prerequisitses: Using Rapier, 50 Light Weapon"
@@ -12473,7 +12499,7 @@
         "altGroup": null
       }
     ],
-    "description": "Running attacks deal increased posture damage. Upon landing your Critical, your next running attack will have increased range.",
+    "description": "Rapier Running attacks deal increased posture damage. Upon landing your Critical, your next running attack will have increased range.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -12505,7 +12531,7 @@
         "altGroup": null
       }
     ],
-    "description": "The more posture you currently have, the more chip and posture damage you deal.",
+    "description": "Rapier The more posture you currently have, the more chip and posture damage you deal.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -12537,7 +12563,7 @@
         "altGroup": null
       }
     ],
-    "description": "Flourishing an enemy causes your M1's to deal additional chip damage, blood loss and makes your hits deal 3 extra true damage until you take damage.",
+    "description": "Rapier Flourishing an enemy causes your M1's to deal additional chip damage, blood loss and makes your hits deal 3 extra true damage until you take damage.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -12927,7 +12953,7 @@
         "altGroup": null
       }
     ],
-    "description": "The first bullet in your gun does more damage when fully loaded. This damage buff scales with the number of bullets up to 15%.",
+    "description": "1H Guns The first bullet in your gun does more damage when fully loaded. This damage buff scales with the number of bullets up to 15%.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -12956,7 +12982,7 @@
         "altGroup": null
       }
     ],
-    "description": "When you land a critical shot, gain Rapid Fire for 2s. 12s Cooldown.",
+    "description": "1H Guns When you land a critical shot, gain Rapid Fire for 2s. 12s Cooldown.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -12988,7 +13014,7 @@
         "altGroup": null
       }
     ],
-    "description": "You have 20% faster reload when reloading an empty pistol.",
+    "description": "1H Guns You have 20% faster reload when reloading an empty pistol.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -13019,7 +13045,7 @@
         "altGroup": null
       }
     ],
-    "description": "When you flourish an opponent you instantly load a bullet.",
+    "description": "1H Guns When you flourish an opponent you instantly load a bullet.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -13048,7 +13074,7 @@
         "altGroup": null
       }
     ],
-    "description": "When under the effects of Rapid Fire you reload 2X as fast.",
+    "description": "1H Guns When under the effects of Rapid Fire you reload 2X as fast.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -13924,7 +13950,7 @@
       "Iron Bombs are crafted with 2 Iron and 1 Coal at any crafting bench.",
       "Bombs have a base damage of 10, scaling on Intelligence. At 100 Intelligence, they deal 45.5 damage.",
       "Bombs deal typeless damage, ignoring armor resistances.",
-      "Press while holding a bomb to throw it. Press while holding a bomb to drop it at your feet.",
+      "Press input=E while holding a bomb to throw it. Press input=M1 while holding a bomb to drop it at your feet.",
       "Bombs do not deal self damage.",
       "Bombs have a 5 second cooldown on throw.",
       "It is highly recommended that you use the Miner's Hardhat when farming for the crafting materials, as it doubles your mining output with a chance to quadruple it."
@@ -14262,7 +14288,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to any Attunement Obelisk while having at least",
+        "prereqValue": "speak to any Attunement Obelisk while having at least 10",
         "isAlternative": true,
         "altGroup": 3
       },
@@ -14313,7 +14339,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to any Attunement Obelisk while having at least",
+        "prereqValue": "speak to any Attunement Obelisk while having at least 10",
         "isAlternative": true,
         "altGroup": 3
       },
@@ -14327,7 +14353,7 @@
     "notes": [
       "Hero's Assist summons the past heroes of the attunements themselves to aid you in battle. You can spawn heroes independent of your current Saint Stance.",
       "This passive ability works once per Saint Stance, requiring you to cycle to the next one to reactivate.",
-      "Flamecharm: Upon flourishing an enemy, set down 3 deadly eruptions in the direction of the flourish, each of which innately proc the talent .",
+      "Flamecharm: Upon flourishing an enemy, set down 3 deadly eruptions in the direction of the flourish, each of which innately proc the talent The Floor is Lava.",
       "Galebreathe: Upon uppercutting, block-breaking an enemy with a mantra, or taking damage while casting a mantra (can be from any source), shoot a miniscule version of the Galebreathe mantra Tornado at the enemy, while also suffocating and knocking them away.",
       "Shadowcast: Upon parrying an attack, summon the Hero of Shadow to do minor damage in an AoE, proccing the talent Sightless Still on anyone hit.",
       "Frostdraw: Upon landing a Frostdraw Mantra, any attuned Mantra while in the Frostdraw Saint Stance, or the Frostdraw-specific Blade of Saints version, summon a stationary turret that fires ice projectiles in a straight line. Applies chill/crystals on hit.",
@@ -14369,7 +14395,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to any Attunement Obelisk while having at least",
+        "prereqValue": "speak to any Attunement Obelisk while having at least 10",
         "isAlternative": true,
         "altGroup": 3
       },
@@ -14419,7 +14445,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to any Attunement Obelisk while having at least",
+        "prereqValue": "speak to any Attunement Obelisk while having at least 10",
         "isAlternative": true,
         "altGroup": 3
       },
@@ -14470,7 +14496,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to any Attunement Obelisk while having at least",
+        "prereqValue": "speak to any Attunement Obelisk while having at least 10",
         "isAlternative": true,
         "altGroup": 3
       },
@@ -14555,7 +14581,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to Adrofalis and spend to instantly skip the Oath's progression (this can only be done if you've fully progressed Saltchemist before).",
+        "prereqValue": "speak to Adrofalis and spend 10 to instantly skip the Oath's progression (this can only be done if you've fully progressed Saltchemist before).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -14607,7 +14633,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to Adrofalis and spend to instantly skip the Oath's progression (this can only be done if you've fully progressed Saltchemist before).",
+        "prereqValue": "speak to Adrofalis and spend 10 to instantly skip the Oath's progression (this can only be done if you've fully progressed Saltchemist before).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -14660,7 +14686,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "speak to Adrofalis and spend to instantly skip the Oath's progression (this can only be done if you've fully progressed Saltchemist before).",
+        "prereqValue": "speak to Adrofalis and spend 10 to instantly skip the Oath's progression (this can only be done if you've fully progressed Saltchemist before).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -14725,9 +14751,9 @@
       }
     ],
     "notes": [
-      "When you land basic attacks during , gain Temporary Health equal to 30% of your weapon's scaled damage.",
+      "When you land basic attacks during Rush Hour, gain Temporary Health equal to 30% of your weapon's scaled damage.",
       "This cannot give more than 50 Temporary Health in one instance.",
-      "This reduces 's self damage by 22%, from 4.5 damage per tick to 3.5 damage per tick.",
+      "This reduces Rush Hour's self damage by 22%, from 4.5 damage per tick to 3.5 damage per tick.",
       "Despite what the description states, this Talent still procs when hitting monsters or other non-player enemies."
     ]
   },
@@ -14998,7 +15024,7 @@
         "altGroup": null
       }
     ],
-    "description": "Enemies hit after you feint them with your fist suffer slight bleed and have their vision obscured slightly and makes PvE enemies Sluggish. (+1 Passive Agility)",
+    "description": "Fist Enemies hit after you feint them with your fist suffer slight bleed and have their vision obscured slightly and makes PvE enemies Sluggish. (+1 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -15041,7 +15067,7 @@
         "altGroup": null
       }
     ],
-    "description": "Feinting into an uppercut blinds, applies Stagger to PvE enemies and also applies Dazed briefly. We're even now, right?",
+    "description": "Fist Feinting into an uppercut blinds, applies Stagger to PvE enemies and also applies Dazed briefly. We're even now, right?",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -15903,7 +15929,7 @@
     "notes": [
       "Landing M1 attacks or criticals with the M1 tag on suffocated targets applies a new stack of suffocation that lasts 5 seconds.",
       "Grants an ~22.5% speed boost for 3 seconds.",
-      "damage can proc this effect."
+      "bleed damage can proc this effect."
     ]
   },
   {
@@ -15967,7 +15993,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16011,7 +16037,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16054,7 +16080,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16085,7 +16111,7 @@
         "altGroup": null
       }
     ],
-    "description": "Initiate a special dash attack by pressing during the start of your dodge.",
+    "description": "Initiate a special dash attack by pressing input=M1 during the start of your dodge.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -16101,7 +16127,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16172,7 +16198,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16203,7 +16229,7 @@
         "altGroup": null
       }
     ],
-    "description": "Press + to activate a special uppercut attack.",
+    "description": "Press input=CTRL + input=M2 to activate a special uppercut attack.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -16219,7 +16245,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16266,7 +16292,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16310,7 +16336,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16337,7 +16363,7 @@
         "altGroup": null
       }
     ],
-    "description": "Press to Quick Swap between weapons within your toolbar.",
+    "description": "Press input=X to Quick Swap between weapons within your toolbar.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -16353,7 +16379,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16400,7 +16426,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give to The Dreadstar",
+        "prereqValue": "give 10 to The Dreadstar",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16705,7 +16731,7 @@
       }
     ],
     "notes": [
-      "Any Talent that requires you to have suffocated an enemy beforehand to activate, such as , will be unable to, making them not worth taking.",
+      "Any Talent that requires you to have suffocated an enemy beforehand to activate, such as Silencer's Song, will be unable to, making them not worth taking.",
       "Any Talent or Mantra that applies suffocation will have the status effect replaced with a Haunted Phantom."
     ]
   },
@@ -16721,7 +16747,7 @@
         "altGroup": null
       }
     ],
-    "description": "Your Haunted Phantoms become Apparitions that apply Winded on hit. Apparitions cannot be parried if you are in .",
+    "description": "Your Haunted Phantoms become Apparitions that apply Winded on hit. Apparitions cannot be parried if you are in Phantom Step.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -16738,7 +16764,7 @@
     ],
     "notes": [
       "Apparitions can be parried in \"Phantom step\" (Possibly a bug)",
-      "Landing an ability that would normally apply or landing a Galebreathe Mantra during creates an Apparition.",
+      "Landing an ability that would normally apply Suffocation or landing a Galebreathe Mantra during Haunted Gale creates an Apparition.",
       "Apparitions have the same stats as Haunted Gale's Ghosts, with 7 base damage and 5 Galebreathe scaling. Though, their model is very different and Apparitions can proc Specter Talents.",
       "The Freezing Wight Talent gives your Apparitions the Frostdraw damage type, Chill application, and an additional 5 Frostdraw scaling."
     ]
@@ -16755,7 +16781,7 @@
         "altGroup": null
       }
     ],
-    "description": "Press to begin running at high speeds and your regular dashes transform into gale dashes. (Must have at least 10% Spectral Gauge)",
+    "description": "Press input=X to begin running at high speeds and your regular dashes transform into gale dashes. (Must have at least 10% Spectral Gauge)",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -16905,7 +16931,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give Samael",
+        "prereqValue": "give Samael 10",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -16962,7 +16988,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "give Samael",
+        "prereqValue": "give Samael 10",
         "isAlternative": true,
         "altGroup": 2
       },
@@ -17616,7 +17642,7 @@
         "altGroup": null
       }
     ],
-    "description": "Daze opponents for 1s and Stagger PvE enemies for 2s when you interrupt their Basic Attack / actions with your own.",
+    "description": "Heavy Weapons Daze opponents for 1s and Stagger PvE enemies for 2s when you interrupt their Basic Attack / actions with your own.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -18069,7 +18095,7 @@
         "altGroup": null
       }
     ],
-    "description": "Pressing [] while crouching allows you to fake being dead. You also take a bit less damage from PvE while ragdolled as well. (+2 Passive Agility)",
+    "description": "Pressing [input=,] while crouching allows you to fake being dead. You also take a bit less damage from PvE while ragdolled as well. (+2 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -18110,7 +18136,7 @@
         "altGroup": null
       }
     ],
-    "description": "Gain the ability to pickpocket by pressing . Deal a little more damage the more notes you have against PvE opponents as well. (+2 Passive Agility)",
+    "description": "Gain the ability to pickpocket by pressing input=N. Deal a little more damage the more notes you have against PvE opponents as well. (+2 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -18128,7 +18154,7 @@
     "notes": [
       "The target needs to be Unconscious to be pickpocket-able.",
       "The Pickpocket keybind can be configured in settings.",
-      "Gain +0.0002% PvE damage for every you have. At 15,000 Notes, this provides a 3% damage buff."
+      "Gain +0.0002% PvE damage for every 1 you have. At 15,000 Notes, this provides a 3% damage buff."
     ]
   },
   {
@@ -18226,7 +18252,7 @@
         "altGroup": null
       }
     ],
-    "description": "On 5th successful attack you will discharge static dealing lightning damage to those nearby.",
+    "description": "Light Weapons On 5th successful attack you will discharge static dealing lightning damage to those nearby.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -18313,7 +18339,7 @@
         "altGroup": null
       }
     ],
-    "description": "Hitting blocks, blocking or parrying hits will now generate an electric charge in your blade, granting a small speed buff. Charges can stack up to 5 times.",
+    "description": "Medium Weapons Hitting blocks, blocking or parrying hits will now generate an electric charge in your blade, granting a small speed buff. Charges can stack up to 5 times.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -18338,7 +18364,7 @@
       "Grants stacks when you get parried, not when you parry attacks. Also grants stacks when you hit blocks or block attacks.",
       "Each stack lasts for 15 seconds and refresh upon gaining another, including when you're at max stacks. You can be at max stacks indefinitely.",
       "Each stack grants an ~2.35% speed boost, totaling to ~11.75% speed at max stacks. The duration of this speed boost is effectively indefinite, as gaining stacks can be done very easily just by playing the game.",
-      "This speed boost can proc speed boost Talents, like or ."
+      "This speed boost can proc speed boost Talents, like Speed Demon or Cheap Shot."
     ]
   },
   {
@@ -18363,7 +18389,7 @@
         "altGroup": null
       }
     ],
-    "description": "Reaching 5 Static Blade charges will now consume the stacks and apply a lightning buff to your blade. 60 second cooldown.",
+    "description": "Medium Weapons Reaching 5 Static Blade charges will now consume the stacks and apply a lightning buff to your blade. 60 second cooldown.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -19125,7 +19151,7 @@
       "Shadow damage from any source applies Shadow Burn. Shadow Burn does 75% less damage than base Flamecharm burn. This burn type cannot be applied to knocked targets.",
       "Anything that would normally apply burn applies Puppet Burn. Puppet Burn does 87.5% less damage than base Flamecharm burn. Puppet Burn allows you to spawn Puppets.",
       "Both these damage multipliers are applied after other damage boosters such as Ash Ember thus working extremely poorly with it.",
-      "Puppets deal 20 typeless damage with no innate investment scaling. Because Puppets deal typeless damage, they bypass armor resistances and . They do NOT do True Damage however, as general resistances still work on them.",
+      "Puppets deal 20 typeless damage with no innate investment scaling. Because Puppets deal typeless damage, they bypass armor resistances and Everchanging Aegis. They do NOT do True Damage however, as general resistances still work on them.",
       "Puppet damage can be increased with damage modifiers. Additionally, Puppet damage is reduced when it's raining unless you have the Unyielding Inferno Talent.",
       "Puppets deal 10 posture damage.",
       "Puppets spawn whenever Puppet Burn deals damage with a 4 second cooldown.",
@@ -19734,7 +19760,7 @@
         "altGroup": null
       }
     ],
-    "description": "Pressing after landing a light attack with the staff performs a follow-up swing from the opposite end.",
+    "description": "Pressing input=M2 after landing a light attack with the staff performs a follow-up swing from the opposite end.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -19759,7 +19785,7 @@
         "altGroup": null
       }
     ],
-    "description": "After blocking an attack, press to counter with your staff.",
+    "description": "After blocking an attack, press input=M2 to counter with your staff.",
     "prerequisites": [
       {
         "prereqType": "talent",
@@ -19913,7 +19939,7 @@
         "altGroup": null
       }
     ],
-    "description": "Landing a hit with your critical makes your opponent unable to jump for a duration. Also slows your opponent and procs on PvE. (+1 Passive Agility)",
+    "description": "Landing a hit with your critical makes your opponent unable to jump for a duration. Also slows your opponent and procs Sluggish on PvE. (+1 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -20028,7 +20054,7 @@
         "altGroup": null
       }
     ],
-    "description": "Running attacks do +15% extra damage when you have a . (+1 Passive Agility)",
+    "description": "Running attacks do +15% extra damage when you have a speed boost. (+1 Passive Agility)",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -20102,7 +20128,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Surge to skip Visionshaper's progression (requires you to have fully progressed the Oath previously).",
+        "prereqValue": "pay Surge 10 to skip Visionshaper's progression (requires you to have fully progressed the Oath previously).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -20140,14 +20166,14 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Surge to skip Visionshaper's progression (requires you to have fully progressed the Oath previously).",
+        "prereqValue": "pay Surge 10 to skip Visionshaper's progression (requires you to have fully progressed the Oath previously).",
         "isAlternative": true,
         "altGroup": 2
       }
     ],
     "notes": [
       "The last non-Oath mantra or critical attack you used before spawning your clones will be stored into the clone. The stored ability will be listed above the clone's head in white text with a purple outline.",
-      "Pressing (can be rebinded in settings) or utilizing the Reality Shift tool will make your clones use their stored ability.",
+      "Pressing input=J (can be rebinded in settings) or utilizing the Reality Shift tool will make your clones use their stored ability.",
       "Clones created from Mirror Illusion or Illusory Counter's Reversal Spark will copy your opponent's last used critical or Mantra instead.",
       "If the clone is too far away from your opponent upon using Reality Shift, they will teleport to them.",
       "Clones will copy your attunement path and mantra modifiers when utilizing your mantras, but they do not utilize your enchants or most Talents.",
@@ -20182,7 +20208,7 @@
       },
       {
         "prereqType": "talent",
-        "prereqValue": "pay Surge to skip Visionshaper's progression (requires you to have fully progressed the Oath previously).",
+        "prereqValue": "pay Surge 10 to skip Visionshaper's progression (requires you to have fully progressed the Oath previously).",
         "isAlternative": true,
         "altGroup": 2
       }
@@ -20394,7 +20420,7 @@
         "altGroup": null
       }
     ],
-    "description": "Successfully dodging will give you hyperarmour on your next swing.",
+    "description": "Heavy Weapons Successfully dodging will give you hyperarmour on your next swing.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -20530,7 +20556,7 @@
         "altGroup": null
       }
     ],
-    "description": "Reduces incoming damage by 5% if hit during Heavy swing hyperarmor.",
+    "description": "Heavy Weapons Reduces incoming damage by 5% if hit during Heavy swing hyperarmor.",
     "prerequisites": [
       {
         "prereqType": "attribute",
@@ -20848,7 +20874,7 @@
     "tree": "Miscellaneous",
     "rarity": "Common",
     "attributes": [],
-    "description": "When you're knocked , enemies gain less health and posture, and allies around you are granted for 20s.",
+    "description": "When you're knocked Unconscious, enemies gain less health and posture, and allies around you are granted Martyrdom for 20s.",
     "prerequisites": [
       {
         "prereqType": "power",
@@ -21054,9 +21080,9 @@
       "The speed boost has no cap and is applied per M1. For example, if you land 5 m1s and are combat tagged by 5 people, you will gain +250% speed. Each speed boost stack lasts 5 seconds and does not refresh upon acquiring another. Additionally, being hit by an attack will also proc this bonus.",
       "After parrying a guard break, gain the Punishing Riposte status effect for 15 seconds, making your critical guaranteed guardbreak if it hits block.",
       "Being combat tagged by 2 or more players will cause your critical attack to deal an additional 10 true damage per hit. This stacks based on how many combat tags you have, dealing a minimum of +20 true damage per hit.",
-      "Reduces the cooldown of by 45 seconds; from 90 seconds to 45.",
+      "Reduces the cooldown of Tactical Reload by 45 seconds; from 90 seconds to 45.",
       "Your Shadowcast Mantras now gain the damage buff and the modification transfer effect from Inhale. Additionally, you can also Inhale Shadowcast Mantras.",
-      "Grants a Talent tool that consumes on use to grant the user a random buff within a set pool.",
+      "Grants a Talent tool that consumes 5 on use to grant the user a random buff within a set pool.",
       "This Talent has a 0.5 second cooldown, and you can overlap the buffs.",
       "The potential buffs are:",
       "20% damage buff. This is also applied to Mantras",
@@ -21228,7 +21254,7 @@
       "Grants true hyperarmor against attacks from opponents who are at least 15 studs away from you.",
       "Despite what the description states, this Talent can activate if you have one PvE combat tag and one PvP combat tag.",
       "The Bloodless Gem heal cap is increased from 15 to 30.",
-      "You will need a scaled damage of 187 (in Pathfinder) or 125 (in ) to reach this new heal cap.",
+      "You will need a scaled damage of 187 (in Pathfinder) or 125 (in Vow of Iron) to reach this new heal cap.",
       "1 minute cooldown.",
       "Increases Katana damage by 25%.",
       "Increases Shattered Katana, Alloyed Katana and Purple Cloud damage by 5%.",
@@ -21248,7 +21274,7 @@
       "Killing a player will give you 2 Runes, and using this Talent's Talent tool will consume 1 Rune, granting you buffs in exchange.",
       "Increases your weapon damage by 50%, gives ?% damage reduction, and grants infinite Ether for 25 second.",
       "Once the buff wears off, one of your legs will break, removing your ability to sprint for 30 seconds.",
-      "Though not stated in the Talent's description, this also gives a speed boost for the full effect's duration. You'll still be at a net negative in terms of movement speed, but you'll be able to benefit from speed boost reliant Talents such as .",
+      "Though not stated in the Talent's description, this also gives a speed boost for the full effect's duration. You'll still be at a net negative in terms of movement speed, but you'll be able to benefit from speed boost reliant Talents such as Speed Demon.",
       "Storm Strikes from other Specialist Equipment Talents now apply the Stormcall Shock status effect, causing your opponent to take damage if they cast Mantras during its duration.",
       "Stormcall Shock deals 15 Gale and Thunder damage, applies Shock for 1 second or 1 Surge Rod, and winded for 2 seconds upon casting any Mantra.",
       "This applies a 5% slow per combat tag you have. This slow lasts 1 second.",
@@ -21288,14 +21314,14 @@
       "Makes you entirely immune to the Second Layer's Parasites, but at a cost of granting you a mobility debuff.",
       "Grants 50% of the Bloodless Gem healing as Temporary Health.",
       "Necrotic Set: Necrotic Cowl, Necrotic Mask",
-      "Bloodcurdle Set: ,",
+      "Bloodcurdle Set: Bloodcurdle Cowl, Bloodcurdle Mask",
       "On use, this summons two allied Blacksteel Pirates to assist you. 5 minute cooldown.",
       "Ossified Black Set: Ossified Black Helm, Ossified Black Pauldrons",
-      "Blackalloy Set: ,",
+      "Blackalloy Set: Blackalloy Helm, Blackalloy Pauldrons",
       "Regenerative Set: Regenerative Pendant, Regenerative Earrings",
-      "Trueblood Set: ,",
+      "Trueblood Set: Trueblood Pendant, Trueblood Earrings",
       "Hardened Enforcer Set: Hardened Enforcer Plate, Hardened Enforcer Boots",
-      "Reinforced Enforcer Set: ,",
+      "Reinforced Enforcer Set: Reinforced Enforcer Plate, Reinforced Enforcer Boots",
       "When landing a Mantra with a Warped Blue Gem equipped, gain the Etherguard status effect, granting you damage reduction to Mantras. This damage reduction scales on the Ether cost of the Mantra you got hit by.",
       "In PvE, Etherguard additionally grants elemental damage reduction.",
       "Bluestone Set: Bluestone Pauldrons, Bluestone Boots",
@@ -21313,7 +21339,7 @@
       "The storm strikes proc Grounding Bolt.",
       "Specialist Set: Specialist Helmet, Specialist Plate, Specialist Boots",
       "Ether Refined Set: Ether Refined Brim, Ether Refined Mantle",
-      "Sorcerer Set: ,"
+      "Sorcerer Set: Sorcerer's Brim, Sorcerer's Mantle"
     ]
   },
   {
@@ -21346,8 +21372,8 @@
     "notes": []
   },
   {
-    "id": "",
-    "name": "",
+    "id": "pleekstys-wrath",
+    "name": "Pleeksty's Wrath",
     "tree": "{{anch|Flame Warden (Vow of Iron)|Flame Warden}}",
     "rarity": "Common",
     "attributes": [
@@ -21425,7 +21451,7 @@
     "description": "Despite the finality of your mind and body succumbing to the effects of the depths, you manage to ward it off for a little longer.",
     "prerequisites": [],
     "notes": [
-      "You can spend more time in before gaining Afflictions."
+      "You can spend more time in The Depths before gaining Afflictions."
     ]
   },
   {
@@ -21770,8 +21796,8 @@
     ]
   },
   {
-    "id": "-2",
-    "name": "",
+    "id": "jackpot",
+    "name": "Jackpot",
     "tree": "{{anch|Toxic Personality (Vow of Iron)|Toxic Personality}}",
     "rarity": "Common",
     "attributes": [
@@ -21813,8 +21839,8 @@
     ]
   },
   {
-    "id": "-3",
-    "name": "",
+    "id": "taunting-tongue",
+    "name": "Taunting Tongue",
     "tree": "{{anch|Toxic Personality (Vow of Iron)|Toxic Personality}}",
     "rarity": "Common",
     "attributes": [
@@ -21829,8 +21855,8 @@
     "notes": []
   },
   {
-    "id": "-4",
-    "name": "",
+    "id": "voice-of-the-mad-god",
+    "name": "Voice of the Mad God",
     "tree": "{{anch|Toxic Personality (Vow of Iron)|Toxic Personality}}",
     "rarity": "Common",
     "attributes": [

@@ -33,7 +33,10 @@ function slugify(name) {
 function cleanWikiMarkup(text) {
   return text
     .replace(/'{2,3}/g, "")               // '''bold''' / ''italic''
-    .replace(/\{\{[^}]*\}\}/g, "")        // {{templates}}
+    .replace(/\{\{[^}]+\}\}/g, (m) => {   // {{templates}} → last pipe param or ""
+      const parts = m.slice(2, -2).split("|");
+      return parts.length > 1 ? parts[parts.length - 1].trim() : "";
+    })
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2")  // [[link|label]] → label
     .replace(/\[\[([^\]]+)\]\]/g, "$1")   // [[link]] → link
     .replace(/<[^>]+>/g, "")              // <html tags>
@@ -384,7 +387,7 @@ function parseTalents(wikitext) {
       const content = cleanWikiMarkup(stripBullets(line));
       if (!content) continue;
 
-      const prereqMatch = content.match(/^Prerequisites?:\s*(.+)$/i);
+      const prereqMatch = content.match(/^Prerequisit(?:e|es|ies):\s*(.+)$/i);
       if (prereqMatch) {
         const parsed = parsePrereqs(prereqMatch[1]);
         currentTalent.prerequisites.push(...parsed);
@@ -395,8 +398,8 @@ function parseTalents(wikitext) {
     }
 
     // Non-bullet paragraph that starts with "Prerequisites:" (some entries use this)
-    if (currentTalent && /^Prerequisites?:/i.test(line.trim())) {
-      const m = line.trim().match(/^Prerequisites?:\s*(.+)$/i);
+    if (currentTalent && /^Prerequisit\w*:/i.test(line.trim())) {
+      const m = line.trim().match(/^Prerequisit(?:e|es|ies):\s*(.+)$/i);
       if (m) {
         const parsed = parsePrereqs(m[1]);
         currentTalent.prerequisites.push(...parsed);
